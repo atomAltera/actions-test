@@ -1,6 +1,6 @@
 {
   "name": "nuclight-actions-test",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Github actions test repo",
   "main": "build/index.js",
   "scripts": {
