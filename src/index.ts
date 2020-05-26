@@ -1,9 +1,15 @@
 
 
 export interface Sum {
-    a: number;
-    b: number;
-    sum: number;
+  a: number;
+  b: number;
+  sum: number;
+}
+
+export interface Sub {
+  a: number;
+  b: number;
+  sub: number;
 }
 
 export function sum(a: number, b: number): Sum {
@@ -12,4 +18,13 @@ export function sum(a: number, b: number): Sum {
         b, 
         sum: a+b,
     }
+}
+
+
+export function sub(a: number, b: number): Sub {
+    return {
+      a,
+      b,
+      sub: a - b,
+    };
 }
