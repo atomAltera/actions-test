@@ -1,8 +1,9 @@
 {
   "name": "nuclight-actions-test",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Github actions test repo",
   "main": "build/index.js",
+  "types": "dist/index.d.ts",  
   "scripts": {
     "test": "jest",
     "build": "tsc"
