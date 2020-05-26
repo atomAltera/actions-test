@@ -1,0 +1,31 @@
+{
+  "name": "actions-test",
+  "version": "1.0.0",
+  "description": "Github actions test repo",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomAltera/actions-test.git"
+  },
+  "keywords": [
+    "test",
+    "actions",
+    "github"
+  ],
+  "author": "Konstantin Alikhanov (atomaltera@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomAltera/actions-test/issues"
+  },
+  "homepage": "https://github.com/atomAltera/actions-test#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  }
+}
