@@ -30,12 +30,15 @@ jobs:
       - run: npm ci
       - run: npm build
       - run: npm test
+      - name: Check if version has been updated
+        id: check
+        uses: EndBug/version-check@v1      
       - name: Publish to npm
-        uses: pascalgn/npm-publish-action@1.2.0
-        with:
-          tag_name: "v%s"
-          tag_message: "v%s"
-          commit_pattern: "^Release (\\S+)"
+        if: steps.check.outputs.changed == 'true'
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Do not publish
+        if: steps.check.outputs.changed 1= 'true'
+        run: echo "not publish"
 
